@@ -1,0 +1,642 @@
+# =============================================================================
+# .gitignore for ASIC Design and RTL Development
+# Generated on 2025-08-20
+# =============================================================================
+
+# =============================================================================
+# ASIC Design Tools and Outputs
+# =============================================================================
+
+# OpenLane / LibreLane
+runs/
+openlane/runs/
+*.odb
+*.def
+*.lef
+*.gds
+*.gdsii
+*.mag
+*.spice
+*.spi
+*.cir
+*.ext
+*.sim
+*.drc
+*.lvs
+*.antenna
+*.log
+*.rpt
+*.json.gz
+
+# Yosys Synthesis
+*.blif
+*.edif
+*.json
+*.dot
+*.svg
+yosys.log
+yosys_*.log
+
+# Magic Layout Tool
+*.mag.bak
+*.magicrc
+magic_*.log
+
+# KLayout
+*.lyp
+*.lym
+*.oas
+
+# Klayout DRC/LVS
+*.lyrdb
+*.db
+
+# Netgen LVS
+*.spice.out
+*.comp.out
+netgen_*.log
+
+# SPICE Simulation
+*.raw
+*.ac*
+*.tr*
+*.sw*
+*.mt*
+*.ic*
+*.op*
+*.tf*
+*.noise*
+*.disto*
+*.sens*
+*.dc*
+*.tran*
+
+# =============================================================================
+# RTL Simulation and Verification
+# =============================================================================
+
+# Icarus Verilog
+*.vvp
+*.vcd
+*.fst
+*.ghw
+*.lxt
+*.lx2
+*.vzt
+*.fst.hier
+a.out
+verilog.log
+
+# Verilator
+obj_dir/
+*.mk
+*.d
+*.o
+*.a
+*.so
+V*.cpp
+V*.h
+verilated*.cpp
+verilated*.h
+
+# ModelSim/QuestaSim
+work/
+*.wlf
+*.vstf
+*.wdb
+transcript
+vsim.wlf
+modelsim.ini
+
+# VCS
+simv*
+*.daidir/
+*.vpd
+*.vdb
+csrc/
+ucli.key
+
+# Cadence Tools
+*.shm/
+*.trn
+*.dsn
+*.log
+*.jou
+*.pb
+*.debug
+*.backup
+*.recover
+*.error
+*.history
+*.inter.vpd
+*.syn.vpd
+*.fsdb
+*.bak
+*.orig
+
+# =============================================================================
+# Python and cocotb
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# cocotb specific
+results.xml
+*.vcd
+*.fst
+*.ghw
+sim_build/
+*.pyc
+.coverage*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# =============================================================================
+# C/C++ (for testbenches and models)
+# =============================================================================
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# =============================================================================
+# IDEs and Editors
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# IntelliJ
+*.iml
+*.ipr
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# SonarLint plugin
+.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android Studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+# Vim
+*~
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# =============================================================================
+# Operating System Files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+*~
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Documentation and Build Artifacts
+# =============================================================================
+
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.loa
+*.nav
+*.snm
+*.vrb
+*.xdy
+*.synctex.gz
+*.run.xml
+
+# Sphinx documentation
+docs/_build/
+.doctrees/
+
+# =============================================================================
+# Version Control and Backup Files
+# =============================================================================
+
+# Git
+*.orig
+*.rej
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+.hgignore
+.hgtags
+
+# Bazaar
+.bzr/
+.bzrignore
+
+# CVS
+/CVS/*
+**/CVS/*
+.cvsignore
+*/.cvsignore
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.save
+*~
+
+# =============================================================================
+# Temporary and Cache Files
+# =============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node_modules (if using Node.js tools)
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# =============================================================================
+# Project Specific
+# =============================================================================
+
+# Add any project-specific ignores here
+# Example:
+# my_custom_output/
+# *.custom_ext
+
+# =============================================================================
+# End of .gitignore
+# =============================================================================
